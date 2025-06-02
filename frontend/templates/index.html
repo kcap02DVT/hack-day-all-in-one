@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interface All-in-One avec Chatbot et Synthétiseur</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='carbon_style.css') }}">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="min-h-screen bg-gradient">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <div class="header-title">
+          <i data-lucide="brain" class="icon purple"></i>
+          <h1>Assistant IA Intelligent</h1>
+        </div>
+        <p>Votre compagnon pour l'écriture et la synthèse de texte</p>
+        {% include 'carbon_counter.html' %}
+      </div>
+    </header>
+
+    <div class="container">
+      <!-- Features Section -->
+      <div class="features">
+        <div class="feature-card">
+          <i data-lucide="bot" class="icon purple"></i>
+          <h2>Chatbot Intelligent</h2>
+          <p>Correction automatique en temps réel de vos messages avec une IA avancée.</p>
+          <div class="feature-footer">
+            <button class="try-button" data-tab="chat">
+              <i data-lucide="arrow-right" class="icon-sm"></i>
+              Essayer
+            </button>
+          </div>
+        </div>
+        <div class="feature-card">
+          <i data-lucide="zap" class="icon pink"></i>
+          <h2>Synthèse Rapide</h2>
+          <p>Transformez vos longs textes en résumés concis et pertinents.</p>
+          <div class="feature-footer">
+            <button class="try-button" data-tab="summary">
+              <i data-lucide="arrow-right" class="icon-sm"></i>
+              Essayer
+            </button>
+          </div>
+        </div>
+        <div class="feature-card">
+          <i data-lucide="Ghost" class="icon pink"></i>
+          <h2>Ghost Agent</h2>
+          <p>Un agent autonome d’analyse concurrentielle capable de collecter, synthétiser et exploiter des données pour suggérer des stratégies de différentiation.</p>
+          <div class="feature-footer">
+            <button class="try-button" data-tab="summary">
+              <i data-lucide="arrow-right" class="icon-sm"></i>
+              Essayer
+            </button>
+          </div>
+        </div>
+          <div class="feature-card">
+          <i data-lucide="File" class="icon pink"></i>
+          <h2>DocGen</h2>
+          <p>Generation de documents administratifs</p>
+          <div class="feature-footer">
+            <button class="try-button" data-tab="summary">
+              <i data-lucide="arrow-right" class="icon-sm"></i>
+              Essayer
+            </button>
+          </div>
+        </div>
+                <div class="feature-card">
+          <i data-lucide="Ghost" class="icon pink"></i>
+          <h2>People</h2>
+          <p>Un agent autonome d’analyse concurrentielle capable de collecter, synthétiser et exploiter des données pour suggérer des stratégies de différentiation.</p>
+          <div class="feature-footer">
+            <button class="try-button" data-tab="summary">
+              <i data-lucide="arrow-right" class="icon-sm"></i>
+              Essayer
+            </button>
+          </div>
+        </div>
+                <div class="feature-card">
+          <i data-lucide="Ghost" class="icon pink"></i>
+          <h2>Docs</h2>
+          <p>Un agent autonome d’analyse concurrentielle capable de collecter, synthétiser et exploiter des données pour suggérer des stratégies de différentiation.</p>
+          <div class="feature-footer">
+            <button class="try-button" data-tab="summary">
+              <i data-lucide="arrow-right" class="icon-sm"></i>
+              Essayer
+            </button>
+          </div>
+        </div>
+                <div class="feature-card">
+          <i data-lucide="Ghost" class="icon pink"></i>
+          <h2>Meet</h2>
+          <p>Un agent autonome d’analyse concurrentielle capable de collecter, synthétiser et exploiter des données pour suggérer des stratégies de différentiation.</p>
+          <div class="feature-footer">
+            <button class="try-button" data-tab="summary">
+              <i data-lucide="arrow-right" class="icon-sm"></i>
+              Essayer
+            </button>
+          </div>
+        </div>
+                <div class="feature-card">
+          <i data-lucide="Ghost" class="icon pink"></i>
+          <h2>Drive</h2>
+          <p>Un agent autonome d’analyse concurrentielle capable de collecter, synthétiser et exploiter des données pour suggérer des stratégies de différentiation.</p>
+          <div class="feature-footer">
+            <button class="try-button" data-tab="summary">
+              <i data-lucide="arrow-right" class="icon-sm"></i>
+              Essayer
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='script_carbon.js') }}"></script>
+  <script src="{{ url_for('static', filename='script_tools.js') }}"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+
+  
+</body>
+</html>
