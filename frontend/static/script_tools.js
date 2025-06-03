@@ -20,27 +20,36 @@ document.addEventListener("DOMContentLoaded", () => {
     // On cible seulement le premier bouton
     if (tryButtons.length > 0) {
       tryButtons[0].addEventListener("click", () => {
-        window.location.href = "/chatbot";
+        window.location.href = "http://localhost:3000/";
       });
+
+      tryButtons[1].addEventListener("click", () => {
+        window.location.href = "#";
+      });
+
+      tryButtons[2].addEventListener("click", () => {
+        window.location.href = "#";
+      });
+
       // Optionnel : tu peux rediriger le second vers une autre page
-    tryButtons[1]?.addEventListener("click", () => {
-        window.location.href = "/summary";
-      });
-
-      tryButtons[2]?.addEventListener("click", () => {
-        window.location.href = "https://ghost-analysis-kcdk.vercel.app/";
-      });
-
-      tryButtons[3]?.addEventListener("click", () => {
-        window.location.href = "/docgen";
+    tryButtons[3]?.addEventListener("click", () => {
+        window.location.href = "#";
       });
 
       tryButtons[4]?.addEventListener("click", () => {
-        window.location.href = "/docgen";
+        window.location.href = "#";
       });
 
       tryButtons[5]?.addEventListener("click", () => {
-        window.location.href = "http://localhost:3000/";
+        window.location.href = "/summary";
+      });
+
+      tryButtons[6]?.addEventListener("click", () => {
+        window.location.href = "https://ghost-analysis-kcdk.vercel.app/";
+      });
+
+      tryButtons[7]?.addEventListener("click", () => {
+        window.location.href = "/docgen";
       });
 
 

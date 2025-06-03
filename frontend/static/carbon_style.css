@@ -54,12 +54,8 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.header-title h1 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  background: linear-gradient(to right, var(--purple-600), var(--pink-600));
-  -webkit-background-clip: text;
-  color: transparent;
+.blue {
+  color: #0d205a; /* ou une autre teinte de bleu */
 }
 
 /* Carbon Counter */
@@ -140,6 +136,19 @@ body {
   padding: 1.5rem;
   border: 1px solid var(--purple-100);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-card .logo {
+    max-width: 50px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.fr-card {
+
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
 }

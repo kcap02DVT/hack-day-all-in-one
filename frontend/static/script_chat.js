@@ -6,25 +6,25 @@
  * Définition des prompts disponibles
  * ------------------------------ */
 const prompts = {
-  1: {
-    title: "Analyse de Risque",
-    text: "En tant qu'expert en gestion de projet, effectuez une analyse de risque sur l'ajout de la fonctionnalité de paiement en ligne à mi-parcours pour mon projet d'application de gestion comptable.",
+ 1: {
+    title: "Renouvellement d'un document administratif",
+    text: "Un usager souhaite renouveler son passeport qui expire prochainement. Indique-lui les démarches à suivre, les pièces justificatives nécessaires, les délais moyens, le coût éventuel, et les canaux disponibles (en ligne, en préfecture, etc.). Donne une réponse claire, à jour, et adaptée à son profil ",
     icon: "alert-triangle"
   },
   2: {
-    title: "Ordonnancement Backlog",
-    text: "En tant que Product Owner, ordonnancez un backlog qui comprend des améliorations de fonctionnalités pour un site existant et dont la priorité est les failles de sécurité, sachant qu'il y a déjà plusieurs incidents de sécurité.",
+    title: "Recherche d'exemples de documents ou de précédents similaires",
+    text: "Trouver un courrier type, une fiche projet, une fiche d'instruction, un rapport équivalent.",
     icon: "list-ordered"
   },
   3: {
-    title: "Diagramme de Gantt",
-    text: "En tant que chef de projet, créez un diagramme de Gantt afin de planifier les étapes et estimer la durée des tâches dans un projet de développement logiciel.",
+    title: "Appui à la rédaction de contenus de formation ou de kits de déploiement",
+    text: "Générer un support de formation à partir de documents internes.",
     icon: "gantt-chart"
   },
   4: {
-    title: "Sprint Planning",
-    text: "En tant que Product Owner, réalisez un Sprint Planning et formulez un objectif de sprint répondant au moins à la moitié des user stories présentes dans un fichier toto.txt.",
-    icon: "target"
+    title: "Génération automatique de notes, synthèses ou courriers",
+    text: "Préparer un compte rendu, une note de synthèse à partir de documents transmis par un agent.",
+    icon: "gauge"
   }
 };
 
@@ -336,11 +336,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const card = document.createElement('div');
     card.className = 'feature-card prompt-card';
     card.innerHTML = `
-      <i data-lucide="${prompt.icon}" class="icon purple"></i>
+      <i data-lucide="${prompt.icon}" class="icon blue"></i>
       <h2>Prompt ${id}: ${prompt.title}</h2>
       <p>${prompt.text}</p>
-      <button class="select-prompt-btn" data-prompt-id="${id}">
-        <i data-lucide="play" class="icon-sm"></i>
+      <button class="select-prompt-btn fr-btn" data-prompt-id="${id}">
+      <i data-lucide="play" class="icon-sm"></i>
         Sélectionner
       </button>
     `;

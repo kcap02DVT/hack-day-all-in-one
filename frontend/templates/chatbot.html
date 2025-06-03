@@ -6,6 +6,7 @@
   <title>Modèle de Langage IA Auto-Correctif</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='chat_style.css') }}" />
   <link rel="stylesheet" href="{{ url_for('static', filename='carbon_style.css') }}">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.9.3/dist/dsfr.min.css">
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
@@ -18,7 +19,7 @@
   </button>
       <div class="header-content">
         <div class="header-title">
-          <i data-lucide="brain" class="icon purple"></i>
+          <i data-lucide="brain" class="icon blue"></i>
           <h1>IA Auto-Correctif</h1>
         </div>
         <p class="subtitle">Un système intelligent qui ajuste les prompts, réduit les hallucinations pour des réponses rapides et fiables.</p>
@@ -31,17 +32,17 @@
       <!-- Features Section -->
       <div class="features">
         <div class="feature-card">
-          <i data-lucide="sparkles" class="icon purple"></i>
+          <i data-lucide="sparkles" class="icon blue"></i>
           <h2>Auto-Correction</h2>
           <p>Amélioration automatique des prompts pour des résultats optimaux.</p>
         </div>
         <div class="feature-card">
-          <i data-lucide="shield-check" class="icon pink"></i>
+          <i data-lucide="shield-check" class="icon blue"></i>
           <h2>Anti-Hallucination</h2>
           <p>Réduction des réponses erronées et incohérentes.</p>
         </div>
         <div class="feature-card">
-          <i data-lucide="check-circle" class="icon pink"></i>
+          <i data-lucide="check-circle" class="icon blue"></i>
           <h2>Haute Précision</h2>
           <p>Résultats fiables et pertinents à chaque fois.</p>
         </div>
@@ -51,10 +52,10 @@
                   <label>Cas d'usage personnalisé :</label>
                   <div class="usecase-input-wrapper">
                     <input type="text" id="customUsecase" placeholder="Décrivez votre cas d'usage...">
-                    <button id="nextPageBtn" class="next-page-btn">
-                      <i data-lucide="arrow-right" class="icon-sm"></i>
-                      Suivant
-                    </button>
+                <button class="next-page-btn fr-btn" id="nextPageBtn">
+                <i data-lucide="arrow-right" class="icon-sm"></i>
+                  Suivant
+                </button>
                   </div>
                 </div>
       <!-- Prompt Selection Interface -->
