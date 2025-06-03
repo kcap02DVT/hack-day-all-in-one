@@ -1,6 +1,6 @@
 # hack-day-all-in-one
 ## Getting started 🔧
-
+## Step 2
 ### Test it
 
 You can test Docs on your browser by visiting this [demo document](https://impress-preprod.beta.numerique.gouv.fr/docs/6ee5aac4-4fb9-457d-95bf-bb56c2467713/)
@@ -70,4 +70,36 @@ To start all the services, except the frontend container, you can use the follow
 
 ```shellscript
 $ make run-backend
+```
+## Step 2
+
+## Prerequisites
+- Python 3.8+
+- pip
+
+## Installation
+
+1. After cloning the repository
+```bash
+cd hack-day-all-in-one/backend
+```
+
+2. Create and activate virtual environment
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+3. Install dependencies
+```bash
+cd ..
+pip install -r requirements.txt
+```
+
+
+## Launch
+
+1. Run the application
+```bash
+python api.py
 ```
